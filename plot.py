@@ -20,6 +20,7 @@ wavenumber = np.arange(2.20,22.20,0.01) # units cm^-1
 plt.xlabel("Wave Number 1/λ (in $cm^-$)")
 plt.ylabel("Intenity B$_λ$ (in MJy/sr)")
 I = irradiance(100*wavenumber)
+#here I have found the wave number corresponding to the maximum irradiance#
 maxvalue = "The peak value at (wave number) "+str(wavenumber[np.where(I == np.amax(I))[0]])
 print(maxvalue)
 
